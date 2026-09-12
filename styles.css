@@ -200,3 +200,17 @@ footer{font-size:13px}
 .role small{font-size:13px}
 @media(max-width:900px){.brand-name small{font-size:11.5px}.nav{height:104px}.nav-links{top:104px}.hero{padding-top:168px}}
 @media(max-width:520px){.brand-name small{font-size:11px;line-height:1.45}.brand-name strong{font-size:16px}.nav{height:108px}.nav-links{top:108px}.hero{padding-top:158px}}
+
+
+/* Minimum supporting text size: 16px */
+.nav-links a,.brand-name small,.eyebrow,.section-label,small,.hero-meta small,.hero-meta strong,
+.metric-grid span,.credentials span,.chips span,.tag,.project-stats span,.mini-stats span,
+.more-work>p,.more-work span,.skill>span,.skill p,.skill small,.role>span,.role p,.role small,
+.education span,.education p,.scroll-note,.available,.video-links a,footer,.text-link,
+.project-copy>p,.card-body p,.lightbox-caption{font-size:16px!important}
+.brand-name small{line-height:1.45;white-space:normal;max-width:720px}
+.nav{height:126px}
+.nav-links{gap:20px}
+.hero{padding-top:195px}
+@media(max-width:900px){.nav{height:142px}.nav-links{top:142px}.hero{padding-top:205px}.brand-name{max-width:calc(100vw - 105px)}}
+@media(max-width:520px){.nav{height:164px}.nav-links{top:164px}.hero{padding-top:220px}.brand-name{max-width:calc(100vw - 82px)}.brand-name small{font-size:16px!important;line-height:1.35}}
