@@ -147,3 +147,14 @@ body.lightbox-active{overflow:hidden}
 .video-links a span{color:var(--accent)}
 .video-links a:hover{border-color:var(--accent);color:var(--accent)}
 @media(max-width:520px){.video-links{display:grid;grid-template-columns:1fr 1fr}.video-links a{gap:8px;padding:9px}}
+
+
+/* Expanded core skills */
+.core-skills-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.core-skills-grid .skill{grid-column:span 2;background:var(--black);border:0!important;min-height:300px}
+.core-skills-grid .skill:nth-child(4),.core-skills-grid .skill:nth-child(5){grid-column:span 3}
+.core-skills-grid .skill h3{margin-top:34px}
+.core-skills-grid .skill p{font-size:14px;line-height:1.7}
+.core-skills-grid .skill small{line-height:1.6}
+@media(max-width:900px){.core-skills-grid{grid-template-columns:repeat(2,1fr)}.core-skills-grid .skill,.core-skills-grid .skill:nth-child(4),.core-skills-grid .skill:nth-child(5){grid-column:span 1}.core-skills-grid .skill:last-child{grid-column:1 / -1}}
+@media(max-width:520px){.core-skills-grid{grid-template-columns:1fr}.core-skills-grid .skill,.core-skills-grid .skill:last-child{grid-column:1}}
