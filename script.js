@@ -30,6 +30,7 @@ const closeLightbox=()=>{
 };
 projectPhotos.forEach((photo,index)=>{
   photo.setAttribute('tabindex','0');
+  photo.setAttribute('draggable','false');
   photo.setAttribute('role','button');
   photo.setAttribute('aria-label','Open full image: '+photo.alt);
   photo.addEventListener('click',()=>openLightbox(index));
