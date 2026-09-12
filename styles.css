@@ -271,3 +271,10 @@ footer{font-size:13px}
 /* Force badge color reveal and bypass older image filters */
 .badge-grid figure img{filter:grayscale(1)!important;-webkit-filter:grayscale(1)!important;transition:filter .3s ease,-webkit-filter .3s ease!important}
 .badge-grid figure:hover img,.badge-grid figure:focus-within img,.badge-grid figure img:hover{filter:grayscale(0)!important;-webkit-filter:grayscale(0)!important}
+
+
+/* Keep certification badges in their original colors */
+.badge-grid figure img,.badge-grid figure:hover img,.badge-grid figure:focus-within img,.badge-grid figure img:hover{
+  filter:none!important;
+  -webkit-filter:none!important;
+}
