@@ -69,3 +69,14 @@ body.lightbox-active{overflow:hidden}
 /* Enlarge the second Polybag thumbnail to fill its panel */
 .photo-gallery-polybag img:nth-of-type(2){object-fit:cover;object-position:center;transform:scale(1.22)}
 .photo-gallery-polybag img:nth-of-type(2):hover{transform:scale(1.27)}
+
+/* Prevent blue selection and tap highlights on clickable project photos */
+.photo-gallery img{
+  -webkit-user-select:none;
+  user-select:none;
+  -webkit-user-drag:none;
+  -webkit-tap-highlight-color:transparent;
+  outline:none;
+}
+.photo-gallery img::selection{background:transparent}
+.photo-gallery img:focus-visible{outline:2px solid var(--accent);outline-offset:-3px}
