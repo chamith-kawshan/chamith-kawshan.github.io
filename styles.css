@@ -227,3 +227,16 @@ footer{font-size:13px}
 .hero{padding-top:176px}
 @media(max-width:900px){.nav{height:124px}.nav-links{top:124px}.hero{padding-top:188px}}
 @media(max-width:520px){.brand-name small{font-size:14px!important;line-height:1.35}.nav{height:142px}.nav-links{top:142px}.hero{padding-top:200px}}
+
+
+/* Supporting text size adjusted to 12px */
+.nav-links a,.brand-name small,.eyebrow,.section-label,small,.hero-meta small,.hero-meta strong,
+.metric-grid span,.credentials span,.chips span,.tag,.project-stats span,.mini-stats span,
+.more-work>p,.more-work span,.skill>span,.skill p,.skill small,.role>span,.role p,.role small,
+.education span,.education p,.scroll-note,.available,.video-links a,footer,.text-link,
+.project-copy>p,.card-body p,.lightbox-caption{font-size:12px!important}
+.brand-name small{line-height:1.45;max-width:720px}
+.nav{height:98px}
+.hero{padding-top:165px}
+@media(max-width:900px){.nav{height:112px}.nav-links{top:112px}.hero{padding-top:178px}}
+@media(max-width:520px){.brand-name small{font-size:12px!important;line-height:1.35}.nav{height:122px}.nav-links{top:122px}.hero{padding-top:180px}}
