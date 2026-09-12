@@ -51,7 +51,7 @@ document.addEventListener('keydown',event=>{
 // Professional section motion and scroll progress
 const prefersReducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const motionTargets=[
-  ...document.querySelectorAll('.section-label,.heading-row,.metric-grid > div,.project-card,.project,.more-work,.skill,.role,.education > div,.contact-box')
+  ...document.querySelectorAll('.section-label,.heading-row > h2,.heading-row > p,.metric-grid > div,.project-copy,.card-body,.more-work > p,.more-work > div,.skill > span,.skill h3,.skill p,.skill small,.timeline-intro,.role > span,.role h3,.role p,.role small,.education h3,.education p,.contact-box > .eyebrow,.contact-box > h2,.contact-box > p,.contact-box > .actions')
 ];
 motionTargets.forEach((element,index)=>{
   element.classList.add('motion-reveal');

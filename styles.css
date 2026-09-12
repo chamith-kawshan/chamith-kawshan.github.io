@@ -164,3 +164,9 @@ body.lightbox-active{overflow:hidden}
 
 /* Smooth left-to-right entrance on narrow screens */
 @media(max-width:520px){.motion-reveal{transform:translateX(-28px)}}
+
+
+/* Animate text only; all portfolio photography and visual panels remain stationary */
+.project.reveal,.project-card.reveal,.heading-row.reveal,.more-work.reveal{opacity:1;transform:none;transition:none}
+.hero-card{opacity:1!important;animation:none!important}
+.project-visual,.card-visual,.photo-gallery,.photo-gallery img{animation:none}
