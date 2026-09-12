@@ -266,3 +266,8 @@ footer{font-size:13px}
 .certificate-list a:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 .certificate-list b{color:var(--accent);font-size:18px;font-weight:500;flex:0 0 auto}
 @media(max-width:700px){.certificate-list{grid-template-columns:1fr}.certificate-list a:nth-child(odd){border-right:0}.certificate-list a{min-height:68px;padding:16px 12px}}
+
+
+/* Force badge color reveal and bypass older image filters */
+.badge-grid figure img{filter:grayscale(1)!important;-webkit-filter:grayscale(1)!important;transition:filter .3s ease,-webkit-filter .3s ease!important}
+.badge-grid figure:hover img,.badge-grid figure:focus-within img,.badge-grid figure img:hover{filter:grayscale(0)!important;-webkit-filter:grayscale(0)!important}
