@@ -65,3 +65,7 @@
 .lightbox-caption{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);margin:0;color:#ddd;font-size:12px;letter-spacing:.04em;text-align:center;width:min(80vw,900px)}
 body.lightbox-active{overflow:hidden}
 @media(max-width:600px){.lightbox{padding:14px}.lightbox-image{max-width:96vw;max-height:82vh}.lightbox-prev,.lightbox-next{top:auto;bottom:55px;width:44px;height:48px}.lightbox-prev{left:18px}.lightbox-next{right:18px}.lightbox-close{right:14px;top:14px}}
+
+/* Enlarge the second Polybag thumbnail to fill its panel */
+.photo-gallery-polybag img:nth-of-type(2){object-fit:cover;object-position:center;transform:scale(1.22)}
+.photo-gallery-polybag img:nth-of-type(2):hover{transform:scale(1.27)}
