@@ -139,3 +139,11 @@ body.lightbox-active{overflow:hidden}
 .research-gallery>span,.research-gallery>b{z-index:3}
 @media(max-width:850px){.research-gallery{height:330px;min-height:330px}.research-gallery img{min-height:330px}}
 @media(max-width:520px){.research-gallery{height:300px;min-height:300px}.research-gallery img{min-height:300px}}
+
+
+/* Project video links */
+.video-links{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 18px}
+.video-links a{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;border:1px solid #3a3a3a;padding:9px 12px;color:#ddd;text-decoration:none;font:600 10px/1.2 Space Grotesk;letter-spacing:.06em;text-transform:uppercase;transition:border-color .2s ease,color .2s ease}
+.video-links a span{color:var(--accent)}
+.video-links a:hover{border-color:var(--accent);color:var(--accent)}
+@media(max-width:520px){.video-links{display:grid;grid-template-columns:1fr 1fr}.video-links a{gap:8px;padding:9px}}
