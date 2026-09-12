@@ -130,3 +130,34 @@ body.lightbox-active{overflow:hidden}
 .research-section .project-card-wide{margin-top:0}
 @media(max-width:850px){.cad-visual{height:330px}}
 @media(max-width:520px){.cad-visual{height:300px;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}.cad-visual img:first-of-type{grid-row:1 / 3}}
+
+
+/* Professional motion system */
+.scroll-progress{position:fixed;top:0;left:0;z-index:101;width:100%;height:2px;transform:scaleX(0);transform-origin:left;background:var(--accent);box-shadow:0 0 12px #c8ff3766;pointer-events:none;will-change:transform}
+.motion-reveal{opacity:0;filter:blur(5px);transform:translateY(34px);transition:opacity .82s cubic-bezier(.22,1,.36,1),transform .82s cubic-bezier(.22,1,.36,1),filter .82s ease;transition-delay:var(--motion-delay,0ms)}
+.motion-reveal.motion-visible{opacity:1;filter:none;transform:none}
+.section-label{display:flex;align-items:center;gap:18px}
+.section-label:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--accent),transparent);transform:scaleX(0);transform-origin:left;transition:transform 1.05s cubic-bezier(.22,1,.36,1) .15s}
+.section-label.motion-visible:after{transform:scaleX(1)}
+.project-card,.skill,.role,.metric-grid>div{transition:border-color .35s ease,background-color .35s ease,transform .4s cubic-bezier(.22,1,.36,1),box-shadow .4s ease}
+.project-card:hover{transform:translateY(-7px);border-color:#4b4b4b;box-shadow:0 22px 55px rgba(0,0,0,.28)}
+.skill:hover{background:#141414}
+.metric-grid>div:hover{background:#1d1d1d}
+.role.current:before{animation:statusPulse 2.6s ease-in-out infinite}
+.photo-gallery img{will-change:transform}
+.cad-visual img{transition:filter .45s ease,transform .7s cubic-bezier(.22,1,.36,1)}
+.cad-visual:hover img{transform:scale(1.035)}
+.hero .eyebrow,.hero h1,.hero .intro,.hero .actions,.hero-card{opacity:0;animation:heroEnter .85s cubic-bezier(.22,1,.36,1) forwards}
+.hero h1{animation-delay:.08s}.hero .intro{animation-delay:.18s}.hero .actions{animation-delay:.28s}.hero-card{animation-delay:.18s}
+@keyframes heroEnter{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes statusPulse{0%,100%{box-shadow:0 0 0 5px #c8ff3722}50%{box-shadow:0 0 0 10px #c8ff3708}}
+@media(max-width:850px){.project-card:hover{transform:translateY(-3px)}}
+@media(prefers-reduced-motion:reduce){
+  .scroll-progress{display:none}
+  .motion-reveal{opacity:1;filter:none;transform:none;transition:none}
+  .section-label:after{transform:scaleX(1);transition:none}
+  .hero .eyebrow,.hero h1,.hero .intro,.hero .actions,.hero-card{opacity:1;animation:none}
+  .role.current:before{animation:none}
+  .project-card,.skill,.role,.metric-grid>div,.cad-visual img{transition:none}
+  .project-card:hover,.cad-visual:hover img{transform:none}
+}
