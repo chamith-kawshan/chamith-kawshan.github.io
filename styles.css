@@ -158,3 +158,23 @@ body.lightbox-active{overflow:hidden}
 .core-skills-grid .skill small{line-height:1.6}
 @media(max-width:900px){.core-skills-grid{grid-template-columns:repeat(2,1fr)}.core-skills-grid .skill,.core-skills-grid .skill:nth-child(4),.core-skills-grid .skill:nth-child(5){grid-column:span 1}.core-skills-grid .skill:last-child{grid-column:1 / -1}}
 @media(max-width:520px){.core-skills-grid{grid-template-columns:1fr}.core-skills-grid .skill,.core-skills-grid .skill:last-child{grid-column:1}}
+
+
+/* Improved small-text readability */
+.eyebrow,.section-label{font-size:12px}
+.nav-links a{font-size:13px}
+.brand-name small{font-size:11px;line-height:1.45}
+small,.hero-meta small{font-size:11px}
+.metric-grid span{font-size:13px}
+.credentials span,.chips span{font-size:11px;line-height:1.4}
+.tag{font-size:11px!important}
+.project-stats span,.mini-stats span{font-size:11px}
+.more-work>p{font-size:11px}
+.more-work span{font-size:12px}
+.skill>span,.role>span,.education span{font-size:11px}
+.scroll-note{font-size:11px}
+.available{font-size:11px}
+.video-links a{font-size:11px}
+footer{font-size:11px}
+@media(max-width:900px){.brand-name small{font-size:10px}}
+@media(max-width:520px){.brand-name small{font-size:10px;line-height:1.4}.brand-name{max-width:calc(100vw - 82px)}}
