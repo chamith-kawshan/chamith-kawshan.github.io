@@ -170,3 +170,12 @@ body.lightbox-active{overflow:hidden}
 .project.reveal,.project-card.reveal,.heading-row.reveal,.more-work.reveal{opacity:1;transform:none;transition:none}
 .hero-card{opacity:1!important;animation:none!important}
 .project-visual,.card-visual,.photo-gallery,.photo-gallery img{animation:none}
+
+
+/* Animations removed */
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.reveal,.reveal.visible,.motion-reveal,.motion-reveal.motion-visible{opacity:1!important;filter:none!important;transform:none!important}
+.section-label::after{transform:scaleX(1)!important}
+.scroll-progress{display:none!important}
+.project-card:hover,.photo-gallery img:hover,.photo-gallery-polybag img:nth-of-type(2),.photo-gallery-polybag img:nth-of-type(2):hover,.cad-visual:hover img,.portrait-shell:hover .portrait{transform:none!important}
