@@ -249,8 +249,8 @@ footer{font-size:13px}
 .certifications-heading p{margin:0;color:#777;font-size:12px}
 .badge-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px}
 .badge-grid figure{margin:0;text-align:center}
-.badge-grid img{display:block;width:100%;max-width:170px;aspect-ratio:1;object-fit:contain;margin:0 auto;filter:saturate(.88);transition:filter .2s ease}
-.badge-grid img:hover{filter:saturate(1)}
+.badge-grid img{display:block;width:100%;max-width:170px;aspect-ratio:1;object-fit:contain;margin:0 auto;filter:grayscale(100%);transition:filter .3s ease}
+.badge-grid img:hover,.badge-grid img:focus{filter:grayscale(0)}
 .badge-grid figcaption{margin-top:12px;color:#aaa;font:600 12px/1.35 Space Grotesk;letter-spacing:.045em;text-transform:uppercase}
 @media(max-width:850px){.certifications{padding-top:72px}.badge-grid{grid-template-columns:repeat(3,1fr);gap:28px 18px}.certifications-heading{display:block}.certifications-heading p{margin-top:8px}}
 @media(max-width:520px){.certifications{padding-top:58px;padding-bottom:28px}.badge-grid{grid-template-columns:repeat(2,1fr);gap:24px 14px}.badge-grid img{max-width:145px}.badge-grid figure:last-child{grid-column:1 / -1}.badge-grid figcaption{font-size:12px}}
