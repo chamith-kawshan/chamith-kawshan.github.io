@@ -179,3 +179,16 @@ html{scroll-behavior:auto}
 .section-label::after{transform:scaleX(1)!important}
 .scroll-progress{display:none!important}
 .project-card:hover,.photo-gallery img:hover,.photo-gallery-polybag img:nth-of-type(2),.photo-gallery-polybag img:nth-of-type(2):hover,.cad-visual:hover img,.portrait-shell:hover .portrait{transform:none!important}
+
+
+/* Fully static presentation: no motion or animated hover states */
+html{scroll-behavior:auto!important}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.reveal,.reveal.visible,.motion-reveal,.motion-reveal.motion-visible{opacity:1!important;filter:none!important;transform:none!important}
+.scroll-progress{display:none!important}
+.btn:hover,.project-card:hover{transform:none!important;box-shadow:none!important}
+.portrait-shell:hover .portrait{filter:grayscale(100%)!important;transform:none!important}
+.photo-gallery:hover img,.photo-gallery img:hover{filter:grayscale(16%) contrast(1.03)!important}
+.photo-gallery img:hover,.cad-visual:hover img{transform:none!important}
+.photo-gallery-polybag img:nth-of-type(2),.photo-gallery-polybag img:nth-of-type(2):hover{transform:scale(1.22)!important}
+.metric-grid>div:hover,.skill:hover{background:inherit}
