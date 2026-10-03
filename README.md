@@ -4,7 +4,7 @@ Responsive GitHub Pages portfolio for Chamith Kawshan, Senior Automation Enginee
 
 ## Live site
 
-https://chamith123.github.io
+https://chamith-kawshan.github.io/
 
 ## Focus
 
